@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+    color: white;
+}
+body{
+    background-image: linear-gradient(120deg, #e2c35d , #d88771);
+    min-height: 100vh;
+}
+h1,
+form,
+.todo-list-container,
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 18vh;
+}
+
+input,
+button{
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.input-box{
+    margin-right: 5px;
+    border: 2px solid #d88771; /* Soft border */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 10px 20px; /* Button size */
+    font-size: 14px;
+}
+
+.add-button{
+  background-color: #ffffff; /* Initial button color (white) */
+  color: #d88771; /* Text color matching the gradient */
+  border: 2px solid #d88771; /* Soft border */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  padding: 10px 20px; /* Button size */
+  font-size: 14px; /* Text size */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; 
+}
+
+.add-button:hover{
+    background-color: #e2c35d; /* Slight lightening on hover */
+    color: #fcfafa; /* Darken the text color slightly */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+    transform: translateY(-2px);
+}
+.todo-container {
+    background-color: white;
+    margin: 1rem 0rem;
+    min-height: fit-content;
+    display: flex;
+    align-items: center; /* Vertical alignment of items */
+    gap: 1rem; /* Space between the button group and the text */
+    padding: 0.5rem;
+}
+
+.todo-buttons {
+    display: flex; /* Align buttons in a row */
+    gap: 0.5rem; /* Space between the buttons */
+}
+
+.todo-item {
+    list-style: none;
+    color: rgb(20, 18, 18);
+    font-size: 1.5rem;
+    flex-grow: 1; /* Push text to the right if buttons take up space */
+}
+
+button {
+    background-color: #f1d77f;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fa-trash-can,
+.fa-check{
+    pointer-events: none;
+}
+.completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
